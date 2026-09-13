@@ -1,4 +1,4 @@
-<img width="679" height="546" alt="Screenshot 2026-09-13 at 2 36 28 PM" src="https://github.com/user-attachments/assets/bc61709c-7243-4138-b840-24e73b3abe9b" />
+
 # AnshuBank — Banking Transaction and Fraud Monitoring System
 
 A professional **Java 21 command-line academic project** for CSE2006 Programming in Java. It simulates customer banking operations and administrative fraud monitoring using H2, JDBC, JPA/Hibernate, collections, exceptions, file I/O and multithreading.
@@ -181,5 +181,5 @@ This simulator does not implement real payment rails, external KYC, distributed 
 <img width="341" height="155" alt="Screenshot 2026-09-13 at 12 30 53 PM" src="https://github.com/user-attachments/assets/f5aa7198-fff2-4fdb-b509-aaaac5bdbd69" />
 <img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 17 24 PM" src="https://github.com/user-attachments/assets/8d627c40-018b-4ae7-9d54-693ebc68b1ed" />
 
-
+<img width="679" height="546" alt="Screenshot 2026-09-13 at 2 36 28 PM" src="https://github.com/user-attachments/assets/bc61709c-7243-4138-b840-24e73b3abe9b" />
 
