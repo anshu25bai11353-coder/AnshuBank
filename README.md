@@ -40,12 +40,32 @@ JPA Query Service -> Hibernate/JPA -> H2
 
 The Maven compiler target is explicitly Java 21 even if a newer JDK is installed.
 
-## Run
-```bash
+## How to Run
+
+### Requirements
+- Java 21
+- Maven 3.8+
+- Git
+
+### Clone the Repository
+
+git clone https://github.com/anshu25bai11353-coder/AnshuBank.git
+
+cd AnshuBank
+
+### Compile
+
 mvn clean compile
-mvn test
+
+### Run
+
 mvn exec:java
-```
+
+The application will start as a command-line banking system.
+
+### Alternative
+
+The project can also be opened in VS Code or IntelliJ IDEA as a Maven project and run from the Java application entry point.`
 
 Primary entry point: `com.anshubank.Main`.
 
