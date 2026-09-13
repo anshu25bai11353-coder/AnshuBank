@@ -1,0 +1,5 @@
+ANSHUBANK FRAUD REPORT
+
+FraudAlert[alertId=FA1789223967912E53F, transactionId=WDR1789223967912E53F, ruleTriggered=Balance: Rs.20000.00 | Transaction is 125.00% of account balance, riskScore=60, riskLevel=MEDIUM, reviewStatus=OPEN, createdAt=2026-09-12T20:09:27.912250, reviewedAt=null]
+FraudAlert[alertId=FA17892239675308E08, transactionId=WDR17892239675308E08, ruleTriggered=Balance: Rs.50000.00 | Large transaction relative to account balance (60.00%), riskScore=40, riskLevel=MEDIUM, reviewStatus=OPEN, createdAt=2026-09-12T20:09:27.535291, reviewedAt=null]
+FraudAlert[alertId=FA1789221925336E7E2, transactionId=TRF1789221925336E7E2, ruleTriggered=Balance: Rs.50000.00 | Transaction is 100.00% of account balance, riskScore=60, riskLevel=MEDIUM, reviewStatus=OPEN, createdAt=2026-09-12T19:35:25.341046, reviewedAt=null]

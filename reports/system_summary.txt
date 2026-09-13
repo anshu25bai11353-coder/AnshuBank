@@ -1,0 +1,9 @@
+ANSHUBANK SYSTEM SUMMARY
+
+Customers: 3
+Accounts: 3
+Transactions: 20
+Suspicious: 3
+Deposits: Rs.189000.00
+Withdrawals: Rs.500000.00
+Transfers: Rs.219000.00
