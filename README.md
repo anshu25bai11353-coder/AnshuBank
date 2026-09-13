@@ -153,5 +153,5 @@ git push -u origin main
 
 Suggested commits: setup, domain models, authentication, accounts, transactions/JDBC, fraud detection, multithreading, reports/I/O, JPA, tests, documentation, final cleanup.
 
-## Limitations / Future Enhancements
+## Future Enhancements
 This simulator does not implement real payment rails, external KYC, distributed locking, encryption-at-rest, MFA or machine-learning fraud detection. Future versions could add stronger password KDFs, audit trails, configurable rule engines and a desktop/web client, while keeping the academic CLI version intact.
