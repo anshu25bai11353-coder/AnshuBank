@@ -157,7 +157,7 @@ Suggested commits: setup, domain models, authentication, accounts, transactions/
 This simulator does not implement real payment rails, external KYC, distributed locking, encryption-at-rest, MFA or machine-learning fraud detection. Future versions could add stronger password KDFs, audit trails, configurable rule engines and a desktop/web client, while keeping the academic CLI version intact.
 
 
-<img width="297" height="221" alt="Screenshot 2026-09-13 at 11 02 01 AM" src="https://github.com/user-attachments/assets/4eaf25be-106a-4ed0-b474-a664ef67a42e" />
+
 <img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 17 33 PM" src="https://github.com/user-attachments/assets/9bfd8077-253c-405d-8080-75dd4d92e575" />
 <img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 18 05 PM" src="https://github.com/user-attachments/assets/61c4efc2-75ce-4b0e-ad4d-c282ae02f529" />
 <img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 18 30 PM" src="https://github.com/user-attachments/assets/0e181181-9702-48f2-a4d3-a67bd8a943fc" />
