@@ -155,3 +155,30 @@ Suggested commits: setup, domain models, authentication, accounts, transactions/
 
 ## Future Enhancements
 This simulator does not implement real payment rails, external KYC, distributed locking, encryption-at-rest, MFA or machine-learning fraud detection. Future versions could add stronger password KDFs, audit trails, configurable rule engines and a desktop/web client, while keeping the academic CLI version intact.
+
+
+<img width="297" height="221" alt="Screenshot 2026-09-13 at 11 02 01 AM" src="https://github.com/user-attachments/assets/4eaf25be-106a-4ed0-b474-a664ef67a42e" />
+<img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 17 33 PM" src="https://github.com/user-attachments/assets/9bfd8077-253c-405d-8080-75dd4d92e575" />
+<img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 18 05 PM" src="https://github.com/user-attachments/assets/61c4efc2-75ce-4b0e-ad4d-c282ae02f529" />
+<img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 18 30 PM" src="https://github.com/user-attachments/assets/0e181181-9702-48f2-a4d3-a67bd8a943fc" />
+<img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 19 07 PM" src="https://github.com/user-attachments/assets/2e9e7958-8b6f-4b52-9699-c62653bace94" />
+<img width="685" height="471" alt="Screenshot 2026-09-13 at 12 20 25 PM" src="https://github.com/user-attachments/assets/017cd0ae-aed7-4bdd-a300-7852a90b0343" />
+<img width="621" height="476" alt="Screenshot 2026-09-13 at 12 21 04 PM" src="https://github.com/user-attachments/assets/432531ac-d351-436d-927a-f42ffc2d69ee" />
+<img width="683" height="474" alt="Screenshot 2026-09-13 at 12 21 41 PM" src="https://github.com/user-attachments/assets/f300a540-de09-4dbc-85cf-307e0c2e5e4c" />
+<img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 22 23 PM" src="https://github.com/user-attachments/assets/204c72c5-a18a-49b3-883c-69c284995c94" />
+<img width="347" height="268" alt="Screenshot 2026-09-13 at 12 23 00 PM" src="https://github.com/user-attachments/assets/3ecf9630-8e3e-4b19-87fd-fa4720273611" />
+<img width="564" height="335" alt="Screenshot 2026-09-13 at 12 24 44 PM" src="https://github.com/user-attachments/assets/429fb60c-7374-4040-b596-c364af2fd293" />
+<img width="526" height="506" alt="Screenshot 2026-09-13 at 12 25 40 PM" src="https://github.com/user-attachments/assets/a405a585-53f2-4fd0-9650-ecb7ed7d4dd6" />
+<img width="607" height="320" alt="Screenshot 2026-09-13 at 12 25 59 PM" src="https://github.com/user-attachments/assets/cb83bf5e-24a5-4a84-8a5b-3b8649186cef" />
+<img width="344" height="281" alt="Screenshot 2026-09-13 at 12 26 16 PM" src="https://github.com/user-attachments/assets/f7c8d13a-5c2d-4ba8-8ac8-4bf5c735104c" />
+<img width="599" height="276" alt="Screenshot 2026-09-13 at 12 27 02 PM" src="https://github.com/user-attachments/assets/c289cd5b-996a-4b36-9444-1c92f34c8f3b" />
+<img width="625" height="506" alt="Screenshot 2026-09-13 at 12 27 21 PM" src="https://github.com/user-attachments/assets/956a83bb-8af1-4797-9c98-dc84ed9fbdfd" />
+<img width="353" height="298" alt="Screenshot 2026-09-13 at 12 28 28 PM" src="https://github.com/user-attachments/assets/e8b4ca7a-61a8-4e3b-b045-4fe0b2a60ce0" />
+<img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 28 58 PM" src="https://github.com/user-attachments/assets/68751657-4b80-4355-89e1-df503393a355" />
+<img width="368" height="561" alt="Screenshot 2026-09-13 at 12 29 32 PM" src="https://github.com/user-attachments/assets/581d5611-c245-4c0c-a729-d16e23224f8a" />
+<img width="689" height="569" alt="Screenshot 2026-09-13 at 12 30 35 PM" src="https://github.com/user-attachments/assets/333f0f6e-f4cc-4aeb-8a8c-4e3d498cc093" />
+<img width="341" height="155" alt="Screenshot 2026-09-13 at 12 30 53 PM" src="https://github.com/user-attachments/assets/f5aa7198-fff2-4fdb-b509-aaaac5bdbd69" />
+<img width="1470" height="956" alt="Screenshot 2026-09-13 at 12 17 24 PM" src="https://github.com/user-attachments/assets/8d627c40-018b-4ae7-9d54-693ebc68b1ed" />
+
+
+
