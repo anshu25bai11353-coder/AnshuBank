@@ -715,31 +715,142 @@ private void showSuspiciousTransactions() throws Exception {
         success("Password changed.");
     }
 
+    
     private void reviewAlerts() throws Exception {
-
-        admin.alerts
-                .all()
-                .forEach(System.out::println);
-
-        String id = prompt(
-                "Alert ID to update (blank to cancel): "
-        );
-
-        if (id.isBlank()) {
+    
+        List<FraudAlert> alerts = admin.alerts.all();
+    
+        header("FRAUD ALERTS", "Review & Update");
+    
+        if (alerts.isEmpty()) {
+            System.out.println("No fraud alerts found.");
             return;
         }
-
-        String s = prompt(
-                "Status (OPEN/UNDER_REVIEW/CLEARED/BLOCKED): "
+    
+        System.out.println(
+                "---------------------------------------------------------------------------------------------"
         );
-
-        admin.review(
-                id,
-                AlertStatus.valueOf(s.toUpperCase())
+        System.out.printf(
+                "%-22s %-22s %-30s %-10s %-12s%n",
+                "Alert ID",
+                "Transaction",
+                "Rule",
+                "Risk",
+                "Status"
         );
+        System.out.println(
+                "---------------------------------------------------------------------------------------------"
+        );
+    
+        for (FraudAlert alert : alerts) {
+    
+            String alertId = alert.alertId();
+            String transactionId = alert.transactionId();
+            String rule = alert.ruleTriggered();
+    
+            // Keep long values inside their columns
+            if (alertId.length() > 22) {
+                alertId = alertId.substring(0, 19) + "...";
+            }
+    
+            if (transactionId.length() > 22) {
+                transactionId = transactionId.substring(0, 19) + "...";
+            }
+    
+            if (rule.length() > 30) {
+                rule = rule.substring(0, 27) + "...";
+            }
+    
+            System.out.printf(
+                    "%-22s %-22s %-30s %-10s %-12s%n",
+                    alertId,
+                    transactionId,
+                    rule,
+                    alert.riskLevel(),
+                    alert.reviewStatus()
+            );
+        }
 
-        success("Alert updated.");
+    System.out.println(
+            "---------------------------------------------------------------------------------------------"
+    );
+
+    String id = prompt(
+            "Alert ID to update (blank to cancel): "
+    ).trim();
+
+    if (id.isEmpty()) {
+        System.out.println("Operation cancelled.");
+        return;
     }
+
+    FraudAlert selectedAlert = null;
+
+    for (FraudAlert alert : alerts) {
+
+        if (alert.alertId().equalsIgnoreCase(id)) {
+            selectedAlert = alert;
+            break;
+        }
+    }
+
+    if (selectedAlert == null) {
+        error("Alert ID not found: " + id);
+        return;
+    }
+
+    System.out.println();
+    System.out.println("Selected Alert");
+    System.out.println("----------------------------------------");
+    System.out.println("Alert ID       : " + selectedAlert.alertId());
+    System.out.println("Transaction ID : " + selectedAlert.transactionId());
+    System.out.println("Rule Triggered : " + selectedAlert.ruleTriggered());
+    System.out.println("Risk Score     : " + selectedAlert.riskScore());
+    System.out.println("Risk Level     : " + selectedAlert.riskLevel());
+    System.out.println("Current Status : " + selectedAlert.reviewStatus());
+    System.out.println("----------------------------------------");
+
+    String statusInput = prompt(
+            "New Status (OPEN/UNDER_REVIEW/CLEARED/BLOCKED): "
+    ).trim();
+
+    if (statusInput.isEmpty()) {
+        System.out.println("Operation cancelled.");
+        return;
+    }
+
+    AlertStatus status;
+
+    try {
+        status = AlertStatus.valueOf(
+                statusInput.toUpperCase()
+        );
+    } catch (IllegalArgumentException e) {
+        error(
+                "Invalid status. Use OPEN, UNDER_REVIEW, CLEARED or BLOCKED."
+        );
+        return;
+    }
+
+    if (selectedAlert.reviewStatus() == status) {
+        System.out.println(
+                "Alert is already marked as " + status + "."
+        );
+        return;
+    }
+
+    admin.review(
+            selectedAlert.alertId(),
+            status
+    );
+
+    success(
+            "Alert " + selectedAlert.alertId()
+                    + " updated to " + status + "."
+    );
+}
+
+
 
     private void manageAccount() throws Exception {
 
